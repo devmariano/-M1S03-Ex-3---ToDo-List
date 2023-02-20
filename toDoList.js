@@ -1,3 +1,5 @@
+//Versão apenas javascript
+
 let tarefas_diarias = ["Acordar", "Escovar os dentes", "Comer", "Dormir"];
 
 // Função para buscar se uma tarefa existe na lista
@@ -31,3 +33,15 @@ function adicionarTarefa(tarefa) {
   tarefas_diarias.push(tarefa);
   return true;
 }
+
+console.log(buscarTarefa("Acordar")); 
+console.log(buscarTarefa("Ler")); // false
+
+console.log(alterarTarefa(2, "Comer")); 
+console.log(tarefas_diarias); 
+
+console.log(deletarTarefa("Dormir")); 
+console.log(tarefas_diarias); 
+
+console.log(adicionarTarefa("Ler livro")); 
+console.log(tarefas_diarias); 
